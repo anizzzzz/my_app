@@ -8,3 +8,11 @@
 
 data = {full_name: 'Punya Anis', email: 'annisanl14@gmail.com', password: 'aniscantik14'}
 user = User.create(data)
+
+articles = [
+    {title: 'Title article 1', description: 'description article 1', user: user},
+    {title: 'Title article 2', description: 'description article 2', user: user},  
+    {title: 'Title article 3', description: 'description article 3', user: user},  
+]
+
+user = Article.create(articles)
